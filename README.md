@@ -133,9 +133,14 @@ These three platform builds are checked via continuous integration:
 
 For notes on how to update and edit the UI translation strings, see [TRANSLATION.md](https://github.com/sonic-visualiser/sonic-visualiser/blob/default/TRANSLATION.md)
 
+React UI prototype
+------------------
+
+A React + Vite control surface that can be connected to Python bindings or any HTTP bridge lives in
+`ui/`. See `ui/README.md` for setup instructions.
 
 More information
-----------------
+-----------------
 
 For more information about Sonic Visualiser, please go to
 

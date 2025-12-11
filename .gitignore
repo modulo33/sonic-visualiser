@@ -65,3 +65,7 @@ squashfs-root
 .notarization-uuid
 .notarization-status
 sonic-visualiser.wxs
+node_modules/
+ui/node_modules/
+ui/dist/
+*.log

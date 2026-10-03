@@ -139,10 +139,16 @@ React UI prototype
 A React + Vite control surface that can be connected to Python bindings or any HTTP bridge lives in
 `ui/`. See `ui/README.md` for setup instructions.
 
+MCP server
+----------
+
+A standalone Model Context Protocol server that controls Sonic Visualiser through its OSC script
+interface lives in `mcp-server/`. See `mcp-server/README.md` for installation, configuration, tools,
+and current limitations.
+
 More information
 -----------------
 
 For more information about Sonic Visualiser, please go to
 
   https://www.sonicvisualiser.org/
-

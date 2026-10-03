@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling==1.29.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sonic-visualiser-mcp"
+version = "0.1.0"
+description = "MCP server for controlling Sonic Visualiser through its OSC script interface"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-2.0-or-later" }
+dependencies = ["mcp==2.3.0"]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.3", "ruff==0.15.12"]
+
+[project.scripts]
+sonic-visualiser-mcp = "sonic_visualiser_mcp.server:main"
+sonic-visualiser-mcp-smoke = "sonic_visualiser_mcp.smoke:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sonic_visualiser_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
